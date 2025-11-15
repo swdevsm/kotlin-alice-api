@@ -2,10 +2,14 @@
 junit-jupiter = "5.11.3"
 publisher = "2.2.0-rc3-dev-59"
 assertj = "3.27.3"
+jackson = "2.19.2"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref="jackson"}
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref="jackson"}
+jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref="jackson"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.1.0" }

@@ -7,7 +7,11 @@ plugins {
 dependencies {
   testImplementation(libs.junit.jupiter)
   testImplementation(libs.assertj)
-  testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+//  testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+  api(libs.jackson.core)
+  api(libs.jackson.databind)
+  api(libs.jackson.kotlin)
 }
 
 kotlinPublications {

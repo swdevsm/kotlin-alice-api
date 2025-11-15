@@ -1,0 +1,14 @@
+{
+  "meta": null,
+  "request": {
+    "type": "SimpleUtterance",
+    "command": "command",
+    "original_utterance": "utterance",
+    "markup": null,
+    "payload": {},
+    "nlu": null
+  },
+  "session": null,
+  "state": null,
+  "version": null
+}

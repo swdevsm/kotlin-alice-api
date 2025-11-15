@@ -17,7 +17,7 @@ subprojects {
 
   java {
     toolchain {
-      version = 17
+      languageVersion = JavaLanguageVersion.of(17)
     }
   }
 
@@ -38,19 +38,14 @@ subprojects {
 }
 
 kotlinPublications {
-  // Default group for all publications
   defaultGroup.set("ru.swdevsm")
-
-  // Prefix for artifacts for all publications
   defaultArtifactIdPrefix.set("kotlin-alice-api")
-
   // Set to false if you want to publish empty Javadoc JARs. Maven Central is OK with it
   fairDokkaJars.set(false)
 
   //todo: add signingCredentials/sonatypeSettings/pom if need it
 
   localRepositories {
-    // Default location for the local repository is build/artifacts/maven/
     defaultLocalMavenRepository()
   }
 }
